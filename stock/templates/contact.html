@@ -1,0 +1,90 @@
+<!dOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/style.css'%}" />
+  </head>
+  <body>
+    <form action="/send" method="post">
+      {% csrf_token %}
+      <section>
+        <div class="container">
+          <div class="containerInfo">
+            <div>
+              <h2>Contact Info</h2>
+              <ul class="info">
+                <li>
+                  <span><img src="{% static '/images/location.png' %}" /></span>
+                  <span
+                    >2912 Meadowbrook Road<br />
+                    Los Angeles, CA<br />
+                    90017
+                  </span>
+                </li>
+                <li>
+                  <span><img src="{% static '/images/mail.png' %}" /></span>
+                  <span>lorem@ipsum.com </span>
+                </li>
+                <li>
+                  <span><img src="{% static '/images/call.png' %}" /></span>
+                  <span>310-286-1623 </span>
+                </li>
+              </ul>
+            </div>
+            <ul class="sci">
+              <li>
+                <a href="#"><img src="{% static '/images/1.png' %}" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="{% static '/images/2.png' %}" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="{% static '/images/3.png' %}" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="{% static '/images/4.png' %}" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="{% static '/images/5.png' %}" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="containerForm">
+            <h2>Send a Message</h2>
+
+            <div class="formBox">
+              
+                <div class="inputBox w50">
+                  <input type="text" name="name" id="name" />
+                  <span>Name</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="email" name="email" id="email" />
+                  <span>Email Address</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="text" name="phoneNumber" id="phoneNumber" />
+                  <span>Mobile Number</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="text" name="city" id="city" />
+                  <span>city</span>
+                </div>
+                <div class="inputBox w100">
+                  <textarea name="msg"></textarea>
+                  <span>Write your message here...</span>
+                </div>
+                <div class="inputBox w100">
+                  <input type="submit" value="Send" />
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>
