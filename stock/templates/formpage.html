@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+  <title>Form Page</title>
+
+  <style>
+    .one
+    {
+
+            height: 100%;
+            background-image: url("/static/images/home.png");
+            background-repeat: no-repeat;
+          background-size:100%;
+          background-attachment: fixed;
+
+    }
+    nav{
+      background-color: black;
+    }
+    .one-edge-shadow {
+              box-shadow: 0 8px 2px -5px rgb(246, 245, 245);
+}
+.display-8{
+  font-weight: 200;
+  font-size: 30px;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+  
+
+  <nav class="one-edge-shadow 
+  sticky-top navbar 
+  navbar-expand-lg
+   navbar-light bg-white">
+    <a class="navbar-brand" href="/"><h1><b>Intraday</b></h1></a>
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ -->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/services"> <span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+
+
+      <ul class=" navbar-nav my-2 my-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="">
+
+            </span>
+  
+            <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+                
+
+
+    <div>
+  <h2 style="font-family: cursive;">{{name}}</h2>
+  
+    </div>
+  
+  </nav>
+
+
+<div class="one">
+<br><br><br><br>
+<center>
+
+  <!--Section: Live preview-->
+<section class="form-dark" style=" height:45rem;">
+
+  <!--Form without header-->
+  <div class="card card-image"
+    style=" width: 28rem; height: 38rem;">
+    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+
+
+      <!--Body-->
+
+              <!--Form with header-->
+        <form method="POST" action="/formcheck">
+
+          {% csrf_token %}
+      <div class="md-form">
+        <label style="color: black;"><b>User-name</b></label>
+        <input type="text" name="name" id="Form-email5" placeholder="Enter a user name" class="form-control white-text">
+        
+      </div>
+
+      <div class="md-form pb-3">
+        <label style="color: black;"><b>Password</b></label>
+        <input type="text" name="password"  id="Form-pass5" placeholder="Enter a Password" class="form-control white-text">
+        
+        </div>
+
+      <div class="md-form pb-3">
+        <label style="color: black;"><b>Mobile no</b></label>
+        <input type="text" name="contact"  id="Form-pass5" placeholder="Enter a Contact-no" class="form-control white-text">
+        </div>
+
+
+      <div class="md-form pb-3">
+        <label style="color: black;"><b>Email</b></label>
+        <input type="text" name="email" class="form-control"  id="Form-pass5" placeholder="Enter a Email Id" class="form-control white-text">
+        </div>
+      
+      
+        <label style="color: black;" placeholder="Enter a Address"><b>Address</b></label>
+      <div class="md-form pb-3">
+        <textarea name="address"  placeholder="Enter address here" style="width: 350px;"></textarea>
+        </div>
+      </div>
+      <!--Grid row-->
+      <div class="row d-flex align-items-center mb-4">
+
+        <!--Grid column-->
+        <div class="text-center mb-3 col-md-12">
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+
+      <!--Grid column-->
+
+    </div>
+
+      </form>
+  </div>
+
+  
+  <!--/Form without header-->
+
+</section>
+<!--Section: Live preview-->
+
+</center>
+</div>
+
+
+    <footer class="page-footer font-small unique-color-danger">
+
+  <div style="background-color: black;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0"><font color="white"><h5><b>Get connected with us on Services</b></h5></font></h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+           <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Services</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Stockmarket is a buy and sells Services</p>
+
+      </div> 
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="/">Home</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Ahmedabad, Gujarat, India</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> ftech@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>+91 8735908383</p>
+        <p>
+          <i class="fas fa-print mr-3"></i>+91 8849522196</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/"> stock.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

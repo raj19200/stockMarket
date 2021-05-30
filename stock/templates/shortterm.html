@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/intraday.css'%}" />
+  </head>
+  <body>
+    <div class="container bg-light">
+      <img
+        src="{% static '/images/intraday.png' %}"
+        class="card-img-top center-block d-block mx-auto"
+        style="height: 20rem; width: 20rem"
+        alt="..."
+      />
+    </div>
+    <center>
+      <h1 class="text-primary">Which category are you interested in</h1>
+    </center>
+
+    <div class="row center-block d-block mx-auto" style="padding-left: 330px">
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+        <div class="card" style="width: 60rem">
+          <div class="card-header center">
+            <ul
+              class="
+                nav nav-tabs
+                card-header-tabs
+                list-inline
+                d-flex
+                justify-content-center
+              "
+              id="bologna-list"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="#equity"
+                  role="tab"
+                  aria-controls="equity"
+                  aria-selected="true"
+                  >Equity</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#commodity"
+                  role="tab"
+                  aria-controls="commodity"
+                  aria-selected="false"
+                  >Commodity</a
+                >
+              </li>
+        
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content mt-3">
+              <div class="tab-pane active" id="equity" role="tabpanel">
+                <div class="row">
+                  <div class="col">
+                    <div
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/cash.png"
+                        alt="Card image cap"
+                        style="height: 15rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">Alpha Equity Cash</h6>
+                        <p class="card-text">
+                          A product designed for traders who aim to grab high potential trades from Cash market.
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/alpha-equity-option.png"
+                        alt="Card image cap"
+                        style="height: 15rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">Alpha Equity Options</h6>
+                        <p class="card-text">
+                         A product designed for traders who aim to grab high potential trades in the Options Market.
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/alpha-mcx.png"
+                        alt="Card image cap"
+                        style="height: 15rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">Alpha MCX</h6>
+                        <p class="card-text">
+                          A product designed for traders who aim to grab high potential trades from Commodity market.
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/FnO-pro.png"
+                        alt="Card image cap"
+                        style="height: 15rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">Alpha MCX</h6>
+                        <p class="card-text">
+                        A Premium Services designed for traders who wants to trade in high volatility in the Future and Option to capture momentum
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/HNI-commodity-mini.png"
+                        alt="Card image cap"
+                        style="height: 15rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">Alpha HNI Commodity - Mini</h6>
+                        <p class="card-text">
+                          An exclusive product designed for High Net-worth Individual traders, who would be serviced by a dedicated Research Analyst.
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/HNI-commodity-mini.png"
+                        alt="Card image cap"
+                        style="height: 15rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">Alpha HNI Commodity - Mega</h6>
+                        <p class="card-text">
+                          An exclusive product designed for High Net-worth Individual traders, who would be serviced by a dedicated Research Analyst.
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <div
+                        class="card shadow-lg rounded-sm"
+                        style="width: 18rem; border-radius: 17px"
+                      >
+                        <img
+                          class="card-img-top"
+                          src="/static/images/bank-nifty.png"
+                          alt="Card image cap"
+                          style="height: 15rem; width: 15rem"
+                        />
+                        <div class="card-body">
+                          <h6 class="card-title">Alpha Bank Nifty</h6>
+                          <p class="card-text">
+                            A product designed for traders who aim to grab swing opportunities in Bank Nifty along with a hedge.
+                          </p>
+                        </div>
+
+                        <div class="card-body">
+                          <center>
+                            <a href="/formpage" class="btn btn-outline-primary"
+                              >Read More</a
+                            >
+                          </center>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane"
+                id="commodity"
+                role="tabpanel"
+                aria-labelledby="history-tab"
+              >
+                <div class="row ">
+                  <div class="col">
+                    <div
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; height: 30rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/commodity-bullion.png"
+                        alt="Card image cap"
+                        style="height: 10rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">Commodity-bullion</h6>
+                        <p class="card-text">
+                          A Product designed for traders who like to trade exclusively in Precious metal i.e Gold & Silver only.
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; height: 30rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/HNI-Commoodity.png"
+                        alt="Card image cap"
+                        style="height: 10rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">HNI commodity</h6>
+                        <p class="card-text">
+                         It is one of our premium service exclusively designed for those traders who want to trade under the continuous guidance of market experts.
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+          
+                      class="card shadow-lg rounded-sm"
+                      style="width: 18rem; height:30rem; border-radius: 17px"
+                    >
+                      <img
+                        class="card-img-top"
+                        src="/static/images/mcx.png"
+                        alt="Card image cap"
+                        style="height: 10rem; width: 15rem"
+                      />
+                      <div class="card-body">
+                        <h6 class="card-title">MCX PRO</h6>
+                        <p class="card-text">
+                          MCX Pro is designed for the traders who want to trade exclusively in Base Metals and Energy commodities.
+                        </p>
+                      </div>
+
+                      <div class="card-body">
+                        <center>
+                          <a href="/formpage" class="btn btn-outline-primary"
+                            >Read More</a
+                          >
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#bologna-list a").on("click", function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+      });
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
