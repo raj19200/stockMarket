@@ -22,7 +22,7 @@ section{
     margin: 0 auto;
 }
 .image{
-    background: url("{%static '/stockMarket/stock/static/images/person.jpg'%}") center/cover no-repeat;
+    background: url("/static/images/person.jpg") center/cover no-repeat;
 }
 
 .content{
